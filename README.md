@@ -16,6 +16,8 @@ This is inspired by/partially copied from [staticfloat/docker-nginx-certbot](htt
 
 In a development/testing environment you can simply leave `RUN_CERTBOT` unset or `RUN_CERTBOT=false` and you can test your Nginx config without https locally. 
 
+Use `CERTBOT_OPTIONS=...` to pass additional options to certbot
+
 The script in the container will attempt certificate renewal every 7 days.
 
 ### Docker
